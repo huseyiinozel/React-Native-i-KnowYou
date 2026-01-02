@@ -14,7 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const LANGUAGE_STORAGE_KEY = '@app_language';
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [language, setLanguageState] = useState<Language>('tr');
+    const [language, setLanguageState] = useState<Language>('en');
     const [isLoading, setIsLoading] = useState(true);
 
 
